@@ -1,27 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-// import { HttpModule } from '@angular/http';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { ViewChildComponent } from './view-child/view-child.component';
-import { EmployeeServiceService } from './employee-service.service';
-import { ViewChildComponent } from './view-child/view-child.component';
-import { HttpClientModule } from '@angular/common/http';
-
+import { ObservableEgComponent } from './observable-eg/observable-eg.component';
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
-    ViewChildComponent,
-    // ViewChildComponent
+    ObservableEgComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    // HttpClientModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [EmployeeServiceService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
