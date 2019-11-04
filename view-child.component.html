@@ -1,0 +1,34 @@
+<!-- <div class="row">
+
+  <div class="col-xs-12">
+    <p>Add server content</p>
+    <label>Server Name</label>
+    <input type="text" class="form-control" #serverNametInput>
+    <button class="btn btn-primary" (click)="onAddServer(serverNametInput)">Add Server</button>
+
+  </div>
+</div> -->
+<div>
+  <p>Parent To child "{{name}}"</p>
+  <button class="btn btn-primary" (click)="childToParent()">Child 2 Parent</button>
+</div>
+<br>
+<div>
+  <label>View Child example</label>
+  <br>
+  <input type="text" #serverNametInput>
+  <button class="btn btn-primary" (click)="onAddServer(serverNametInput)">Add Server</button>
+
+</div>
+<div>
+  View Child : {{serverContent}}
+</div>
+<br>
+<div>
+  <label>Service example</label>
+  <ul *ngFor="let employee of exployees">
+    <li>
+      {{employee.id}} . {{employee.name}} - {{employee.age}}
+    </li>
+  </ul>
+</div>
